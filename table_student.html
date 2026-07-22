@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studets data Table</title>
+</head>
+<body>
+    <h1> Wisdome Students B87 batch Students list</h1>
+
+    <table border="2"> 
+        <thead> <!-- Heading section-->
+            <tr> <!-- First Row start-->
+                <!-- First Rows all HEdings-->
+                <th> <font color=blue> Roll No </font></th>        <!-- col 1 -->
+                <th> <font color=blue> First Name </font> </th>     <!-- col 2 -->
+                <th> <font color=blue> Last Name </font></th>      <!-- col 3 -->
+                <th> <font color=blue> Mobile No</font> </th>      <!-- col 4 -->
+                <th> <font color=blue> Marks </font> </th>          <!-- col 5 -->
+                <th> <font color=blue> Photo </font></th>          <!-- col 6 -->
+                <!-- First Rows all Headings ends here-->
+            </tr><!-- First Row Ends-->
+        </thead> <!-- Heading section ends here-->
+
+        <!--  Now we will write Table Body-->
+          <tbody>
+            <tr>
+                <td> 01</td>
+                <td> Sanjyot  </td>
+                <td> Gaikwad </td>
+                <td> 8669147564 </td>
+                <td> 90% </td>
+                <td> <img src="./FOLDER/deepika.jfif" height="50px" width="50px"></td>
+            </tr>
+
+            <tr>
+                <td> 02</td>
+                <td> Swapnaja  </td>
+                <td> Madlik </td>
+                <td> 9169147564 </td>
+                <td> 90% </td>
+                <td> <img src="./FOLDER/kareena.jfif" height="50px" width="50px"></td>
+            </tr>
+
+            <tr>
+                <td> 03</td>
+                <td> Tanuj   </td>
+                <td> Mandlik </td>
+                <td> 9665647564 </td>
+                <td> 90% </td>
+                <td> <img src="./FOLDER/vicky_kaushal.jfif" height="50px" width="50px"></td>
+            </tr>
+
+            <tr>
+                <td> 04</td>
+                <td> Akshay  </td>
+                <td> Mandlik </td>
+                <td> 9969147564 </td>
+                <td> 90% </td>
+                <td> <img src="./FOLDER/shahid.jfif" height="50px" width="50px"></td>
+            </tr>
+
+          </tbody>
+    </table>
+
+    <h3>  creating anoter table using table span and font attribute</h3>
+
+    <table border="2">
+        <thead> <!-- Heading section-->
+            <tr> <!-- First Row start-->
+                <!-- First Rows all HEdings-->
+                <th> Roll No</th>        <!-- col 1 -->
+                <th colspan="2"> Full Name</th>     <!-- col 2 -->  
+                <!-- <th> Last Name</th>  we have removed this col nd merged first name and last name col -->
+                <th> Mobile No</th>      <!-- col 4 -->
+                <th> Marks</th>          <!-- col 5 -->
+                <!-- First Rows all Headings ends here-->
+            </tr><!-- First Row Ends-->
+        </thead> <!-- Heading section ends here-->
+
+        <!--  Now we will write Table Body-->
+          <tbody>
+            <tr>
+                <td rowspan="2"> 01</td>
+                <td rowspan="2"> Sanjyot  </td>
+                <td rowspan="2"> Gaikwad </td>
+                <td> 8669147564 </td>
+                <td rowspan="2"> 90% </td>
+            </tr>
+            <!-- adding another row for only contach number. using row span-->
+             <!-- for that we are adding another row after first row where we want to add another row for contact no-->
+
+             <tr> 
+                <td> 9011075253</td>
+             </tr>
+             <!-- but it gets added after Roll no. for to not to add so we have to add colspan for each row
+              and do not add colspan to mobile no -->
+
+            <tr>
+                <td > 02</td>
+                <td> Swapnaja  </td>
+                <td> Madlik </td>
+                <td> 9169147564 </td>
+                <td> 90% </td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"> 03</td>
+                <td rowspan="2"> Tanuj   </td>
+                <td rowspan="2"> Mandlik </td>
+                <td> 9665647564 </td>
+                <td rowspan="2"> 90% </td>
+            </tr>
+            <tr> 
+                <td> 9011075253</td>
+             </tr>
+
+            <tr>
+                <td> 04</td>
+                <td> Akshay  </td>
+                <td> Mandlik </td>
+                <td> 9969147564 </td>
+                <td> 90% </td>
+            </tr>
+
+          </tbody>
+    </table>
+</body>
+</html>
